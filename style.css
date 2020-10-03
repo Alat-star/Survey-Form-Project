@@ -1,0 +1,241 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+ 
+:root {
+    --clr-salmon: #F4989C;
+    --clr-teal: #0e7c7b;
+    --clr-max-blue: rgba(23, 190, 187, 0.9);
+    --clr-maxblue: hsl(179, 78%, 82%);
+    --clr-light: #fff;
+    --clr-dark: #000;
+    --clr-tealhsl: 	hsl(179, 80%, 27%);
+    --clr-tealrgba: rgba(14, 124, 123, 0.8);
+    --clr-input: 	hsl(30, 70%, 30%);
+}
+
+/* general styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    line-height: 25px;
+    color: var(--clr-light);
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: var(--clr-teal);
+    background-image: linear-gradient(115deg,rgba(23, 190, 187, 0.9), rgba(235, 210, 180, 0.7)), url(images/clinic1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply; 
+}
+
+h1 {
+    font-weight: 900;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    /* color: var(--clr-dark); */
+
+}
+
+p {
+    margin-top: 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    /* color: var(--clr-dark); */
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+
+    /* color: var(--clr-dark); */
+
+}
+
+input, button, textarea, select {
+    margin: 0;
+    font-size: inherit;
+    line-height: 25px;
+    font-family: inherit;
+    /* color: var(--clr-dark); */
+}
+
+
+button {
+    display: block;
+    cursor: pointer;
+    border: 1px solid inherit;
+    color: var(--clr-dark);
+    background: var(--clr-salmon);
+    border-radius: 9%;
+    padding: 0.8rem;
+    width: 30vmin; 
+    font-size: 3.5vmin;
+    font-weight: 900;
+    margin: 0 auto 0 auto;
+   
+    
+    
+}
+button:hover {
+    transition-delay: none;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    font-size: 4vmin;
+}
+
+button:active {
+    box-shadow: inset;
+    outline: none;
+}
+
+
+/* parent div */
+
+.parent {
+    margin: 3rem auto 1.5em auto;
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .parent {
+        max-width: 450px;
+    }
+} 
+
+@media (min-width: 700px) {
+    .parent {
+        max-width: 680px;
+    }
+}
+
+header {
+    margin: 0 0 1.6rem 0;
+    padding: 0, 1.75rem;
+}
+
+.logo {
+    margin-bottom: 1.5rem;
+    /* margin-left: 3.7rem; */
+    max-width: 100%;
+    height: auto;
+    
+    text-align: center;
+    /* width: 10vmax; */
+}
+
+/* first p tag */
+
+.message {
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+    font-style: oblique;
+    text-align: center;
+    text-transform: none;
+    font-weight: 900;
+    font-size: 1.125rem;
+
+}
+
+/* span tag */
+
+
+.check {
+    
+    font-size: 3vmin;
+}
+
+/* form */
+
+
+form {
+    border-radius: 5%;
+    padding: 3rem 0.8rem;
+    background: var(--clr-tealrgba);
+    background-blend-mode: multiple;
+    
+}
+
+@media (min-width: 450px) {
+    form {
+        padding: 3rem 3rem;
+    }
+}
+
+
+
+.form-div{
+    padding: .3rem;
+    margin: 0 auto 1.3rem auto;
+}
+
+.form-input {
+    display: block;
+    background: var(--clr-light);
+    background-clip: padding-box;
+    width: 100%;
+    height: 2.85rem;
+    color: var(--clr-input);
+    border: 1px solid var(--clr-input);
+    border-radius: 6%;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    font-size: 3.5vmin;
+     
+    
+}
+
+.form-input:focus {
+    border-color: salmon;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
+}
+
+.checkbox-input, .radio-input {
+display: inline-block;
+margin-right: 0.8em;
+min-width: 1.28rem;
+min-height: 1.28rem;
+}
+
+.textarea-input {
+    width: 100%;
+    padding: 0.8rem;
+    resize: vertical;
+    min-height: 130px;
+    font-size: 3.5vmin;
+}
+
+/* redundant command */
+
+/* .checkbox-input, .form-regular {
+    font-size: 3.5vmin;
+    font-weight: 400;
+} */
+
+.radio-input{
+    font-weight: 900;
+    font-size: 1.5vmin;
+}
