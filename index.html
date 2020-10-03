@@ -19,16 +19,16 @@
       <form action="#">
           <div class="form-div">
               <label for="name">Name</label>
-              <input class="form-input form-regular" type="text" placeholder="Enter name" name="name">
+              <input class="form-input form-regular" type="text" placeholder="Enter name" name="name" id="name" required>
          </div>
          <div class="form-div">
             <label for="date">Birth Date</label>
-            <input class="form-input form-regular" type="date" name="date">
+            <input class="form-input form-regular" type="date" name="date" id="date" required>
           </div>
           
           <div class="form-div">
             <label for="sex">Gender</label>
-            <select class="form-input" name="sex" id="dropdown">
+            <select class="form-input" name="sex" id="dropdown" required>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="bisexual">Transexual</option>
@@ -37,7 +37,7 @@
           </div>
           <div class="form-div">
             <label for="email">Email</label>
-            <input class="form-input form-regular" type="email" name="email" placeholder="example@mai.com">
+            <input class="form-input form-regular" type="email" name="email" id="email" placeholder="example@mai.com" required>
         </div>
          
           <div class="form-div">
@@ -47,20 +47,19 @@
           </div>
           <div class="form-div">
               <p>Location</p>
-              <label for="location"></label>
-              <input type="text" class="form-input form-regular" name="location">
+              <input type="text" class="form-input form-regular" name="location" required>
 
           </div>
           <div class="form-div">
               <p>Visits per week ?</p>
-              <label for="pt-visits"><input class="radio-input" name="pt-visit" value="2-3" type="radio">2-3</label>
-              <label for="pt-visits"><input class="radio-input" name="pt-visit" value="3-4" type="radio">3-4</label>
-              <label for="pt-visits"><input class="radio-input" name="pt-visit" value="above 5" type="radio">Above 5</label>
+              <label><input class="radio-input" name="pt-visit" value="2-3" type="radio">2-3</label>
+              <label><input class="radio-input" name="pt-visit" value="3-4" type="radio">3-4</label>
+              <label><input class="radio-input" name="pt-visit" value="above 5" type="radio">Above 5</label>
 
           </div>
           <div class="form-div">
             <p>Waiting Time</p>
-            <select class="form-input form-class" name="rating" id="rating">
+            <select class="form-input form-class" name="rating" id="rating" required>
               <option disabled selected value>Select an option</option>
               <option value="satisfied">Satisfied</option>
               <option value="neutral">Neutral</option>
@@ -68,8 +67,8 @@
           </select>
         </div>
           <div class="form-div">
-              <p>Rate outpatient treatment</p>
-              <select class="form-input form-class" name="rating">
+              <p>Rate our outpatient treatment</p>
+              <select class="form-input form-class" name="rating" required>
                   <option disabled selected value>Select an option</option>
                   <option value="satisfied">Satisfied</option>
                   <option value="neutral">Neutral</option>
@@ -78,7 +77,7 @@
           </div>
           <div class="form-div">
               <p>Rate our inpatient treatment</p>
-              <select class="form-input form-class" name="rating">
+              <select class="form-input form-class" name="rating" required>
                 <option disabled selected value>Select an option</option>
                 <option value="satisfied">Satisfied</option>
                 <option value="neutral">Neutral</option>
@@ -88,7 +87,7 @@
           </div>
           <div class="form-div">
               <p>Rate our telehealth treatment</p>
-              <select class="form-input form-class" name="rating">
+              <select class="form-input form-class" name="rating" required>
                 <option disabled selected value>Select an option</option>
                 <option value="satisfied">Satisfied</option>
                 <option value="neutral">Neutral</option>
@@ -108,11 +107,11 @@
       
           <div class="form-div">
               <p>Staff <i>abuse</i></p>
-              <label for="abuse"><input id="abuse" name="abuse" class="radio-input" type="radio">Yes</label>
-              <label for="abuse"><input id="abuse" name="abuse" class="radio-input" type="radio">No</label>
-              
-
+              <label><input name="abuse" class="radio-input" type="radio">Yes</label>
+              <label><input name="abuse" class="radio-input" type="radio">No</label>
           </div>
+
+
           <div class="form-div">
               <p>check whatever you need us to improve</p>
               <span class="check">(check your takes)</span>
