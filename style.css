@@ -228,13 +228,6 @@ min-height: 1.28rem;
     font-size: 3.5vmin;
 }
 
-/* redundant command */
-
-/* .checkbox-input, .form-regular {
-    font-size: 3.5vmin;
-    font-weight: 400;
-} */
-
 .radio-input{
     font-weight: 900;
     font-size: 1.5vmin;

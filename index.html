@@ -16,18 +16,18 @@
           <p class="message">Thank you for taking the survey as it's vital to help promote client care</p>
 
       </header>
-      <form action="">
+      <form action="#">
           <div class="form-div">
               <label for="name">Name</label>
               <input class="form-input form-regular" type="text" placeholder="Enter name" name="name">
          </div>
          <div class="form-div">
             <label for="date">Birth Date</label>
-            <input class="form-input form-regular" type="date" value="date" name="date">
+            <input class="form-input form-regular" type="date" name="date">
           </div>
           
           <div class="form-div">
-            <label for="">Gender</label>
+            <label for="sex">Gender</label>
             <select class="form-input" name="sex" id="dropdown">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -53,14 +53,14 @@
           </div>
           <div class="form-div">
               <p>Visits per week ?</p>
-              <label for="visits"><input class="radio-input" name="Pt-visit" id="" value="" type="radio">2-3</label>
-              <label for="visits"><input class="radio-input" name="Pt-visit" id="" value="" type="radio">3-4</label>
-              <label for="visits"><input class="radio-input" name="Pt-visit" id="" value="" type="radio">Above 5</label>
+              <label for="pt-visits"><input class="radio-input" name="pt-visit" value="2-3" type="radio">2-3</label>
+              <label for="pt-visits"><input class="radio-input" name="pt-visit" value="3-4" type="radio">3-4</label>
+              <label for="pt-visits"><input class="radio-input" name="pt-visit" value="above 5" type="radio">Above 5</label>
 
           </div>
           <div class="form-div">
             <p>Waiting Time</p>
-            <select class="form-input" name="rating" id="rating" class="form-class">
+            <select class="form-input form-class" name="rating" id="rating">
               <option disabled selected value>Select an option</option>
               <option value="satisfied">Satisfied</option>
               <option value="neutral">Neutral</option>
@@ -69,7 +69,7 @@
         </div>
           <div class="form-div">
               <p>Rate outpatient treatment</p>
-              <select class="form-input" name="rating" id="rating" class="form-class">
+              <select class="form-input form-class" name="rating">
                   <option disabled selected value>Select an option</option>
                   <option value="satisfied">Satisfied</option>
                   <option value="neutral">Neutral</option>
@@ -78,7 +78,7 @@
           </div>
           <div class="form-div">
               <p>Rate our inpatient treatment</p>
-              <select class="form-input" name="rating" id="rating" class="form-class">
+              <select class="form-input form-class" name="rating">
                 <option disabled selected value>Select an option</option>
                 <option value="satisfied">Satisfied</option>
                 <option value="neutral">Neutral</option>
@@ -88,7 +88,7 @@
           </div>
           <div class="form-div">
               <p>Rate our telehealth treatment</p>
-              <select class="form-input" name="rating" id="rating" class="form-class">
+              <select class="form-input form-class" name="rating">
                 <option disabled selected value>Select an option</option>
                 <option value="satisfied">Satisfied</option>
                 <option value="neutral">Neutral</option>
@@ -98,7 +98,7 @@
          
           <div class="form-div">
               <p>Hygiene</p>
-              <select class="form-input" name="rating" id="rating" class="form-class">
+              <select class="form-input form-class" name="rating">
                 <option disabled selected value>Select an option</option>
                 <option value="satisfied">Satisfied</option>
                 <option value="neutral">Neutral</option>
@@ -108,25 +108,25 @@
       
           <div class="form-div">
               <p>Staff <i>abuse</i></p>
-              <label for="abuse"><input name="abuse" class="radio-input" type="radio">Yes</label>
-              <label for="abuse"><input name="abuse" class="radio-input" type="radio">No</label>
+              <label for="abuse"><input id="abuse" name="abuse" class="radio-input" type="radio">Yes</label>
+              <label for="abuse"><input id="abuse" name="abuse" class="radio-input" type="radio">No</label>
               
 
           </div>
           <div class="form-div">
               <p>check whatever you need us to improve</p>
               <span class="check">(check your takes)</span>
-              <label><input class="checkbox-input" value="" name="selection" type="checkbox">pt forum</label>
-              <label><input class="checkbox-input" value="" name="selection" type="checkbox">waiting time</label>
-              <label><input class="checkbox-input" value="" name="selection" type="checkbox">PT relation</label>
-              <label><input class="checkbox-input" value="" name="selection" type="checkbox">environment</label>
-              <label><input class="checkbox-input" value="" name="selection" type="checkbox">treatment modalities</label>
-              <label><input class="checkbox-input" value="" name="selection" type="checkbox">consulting cubicle</label>
-              <label><input class="checkbox-input" value="" name="selection" type="checkbox">gym</label>
+              <label><input class="checkbox-input" value="pt forum" name="selection" type="checkbox">pt forum</label>
+              <label><input class="checkbox-input" value="waiting time" name="selection" type="checkbox">waiting time</label>
+              <label><input class="checkbox-input" value="pt relation" name="selection" type="checkbox">PT relation</label>
+              <label><input class="checkbox-input" value="environment" name="selection" type="checkbox">environment</label>
+              <label><input class="checkbox-input" value="treatment modalities" name="selection" type="checkbox">treatment modalities</label>
+              <label><input class="checkbox-input" value="consulting cubicle" name="selection" type="checkbox">consulting cubicle</label>
+              <label><input class="checkbox-input" value="gym" name="selection" type="checkbox">gym</label>
           </div>
           <div class="form-div">
             <p>Any tips on how to serve you better</p>
-            <textarea class="textarea-input form-regular" name="" id="" cols="30" rows="10" placeholder="Kindly enter your comment"></textarea>
+            <textarea class="textarea-input form-regular" name="take" id="take" cols="30" rows="10" placeholder="Kindly enter your comment"></textarea>
           </div>
           <div class="form-div button">
               <button>Submit</button>
